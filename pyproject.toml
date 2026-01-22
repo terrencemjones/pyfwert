@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyfwert"
+version = "0.1.0"
+description = "A pattern-based password generator that creates strong, memorable passwords"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [
+    { name = "Mark Burnett", email = "mb@xato.net" }
+]
+keywords = ["password", "generator", "security", "memorable"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/xato/pafwert"
+Repository = "https://github.com/xato/pafwert"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyfwert"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/tests",
+]
+
+[project.scripts]
+pyfwert = "pyfwert.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
