@@ -118,4 +118,4 @@ Apache 2.0 - See [LICENSE](LICENSE) for details.
 ## Credits
 
 Original Pafwert by Mark Burnett (2001-2013).
-Python port created in 2024.
+Python port created in 2026.
