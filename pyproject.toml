@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyfwert"
-version = "0.1.1"
+version = "0.1.2"
 description = "A pattern-based password generator that creates strong, memorable passwords"
 readme = "README.md"
 license = "Apache-2.0"
 authors = [
-    { name = "Mark Burnett", email = "mb@xato.net" }
+    { name = "Terrence Jones", email = "terrencemjones@gmail.com" }
 ]
 keywords = ["password", "generator", "security", "memorable"]
 classifiers = [
