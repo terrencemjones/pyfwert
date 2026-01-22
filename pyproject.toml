@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyfwert"
-version = "0.1.0"
+version = "0.1.1"
 description = "A pattern-based password generator that creates strong, memorable passwords"
 readme = "README.md"
 license = "Apache-2.0"
@@ -29,8 +29,8 @@ requires-python = ">=3.9"
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/xato/pafwert"
-Repository = "https://github.com/xato/pafwert"
+Homepage = "https://github.com/terrencemjones/pyfwert"
+Repository = "https://github.com/terrencemjones/pyfwert"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pyfwert"]
