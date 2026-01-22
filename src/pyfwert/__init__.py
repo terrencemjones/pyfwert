@@ -18,8 +18,8 @@ Example usage:
     password = gen.generate("{word(animal)} {word(color)}")
 """
 
-__version__ = "0.1.0"
-__author__ = "Mark Burnett"
+__version__ = "0.1.3"
+__author__ = "Terrence Jones"
 __license__ = "Apache-2.0"
 
 from pyfwert.generator import PasswordGenerator, generate_password

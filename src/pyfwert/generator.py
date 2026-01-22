@@ -139,6 +139,18 @@ class PasswordGenerator:
                     # Resolve this placeholder
                     value = self._resolve_placeholder_content(processed_content, keywords)
 
+                    # Check for qualifier after closing brace (e.g., }[50])
+                    if j < len(pattern) and pattern[j] == "[":
+                        qual_end = pattern.find("]", j)
+                        if qual_end != -1:
+                            try:
+                                qualifier = int(pattern[j+1:qual_end])
+                                if rand(99, 0) >= qualifier:
+                                    value = ""
+                            except ValueError:
+                                pass
+                            j = qual_end + 1
+
                     # Check for modifiers after the closing brace (e.g., }+propercase)
                     while j < len(pattern) and pattern[j] == "+":
                         # Parse the modifier

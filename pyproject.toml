@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyfwert"
-version = "0.1.2"
+version = "0.1.3"
 description = "A pattern-based password generator that creates strong, memorable passwords"
 readme = "README.md"
 license = "Apache-2.0"
